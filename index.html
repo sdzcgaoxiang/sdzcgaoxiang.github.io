@@ -1,52 +1,54 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>星星被摘到！</title>
-	<style>
-		body {
-			background-color: #212121;
-			color: #f5f5f5;
-			font-family: sans-serif;
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-			justify-content: center;
-			height: 100vh;
-			margin: 0;
-			padding: 0;
-			text-align: center;
-		}
-		h1 {
-			font-size: 3rem;
-			margin-top: 2rem;
-			margin-bottom: 1rem;
-			text-shadow: 2px 2px #000000;
-		}
-		img {
-			width: 200px;
-			height: 200px;
-			margin: 2rem 0;
-			filter: drop-shadow(2px 2px 4px #000000);
-			animation: spin 1s linear infinite;
-		}
-		p {
-			font-size: 1.5rem;
-			margin-top: 1rem;
-			text-shadow: 1px 1px #000000;
-		}
-		@keyframes spin {
-			from {
-				transform: rotate(0deg);
-			}
-			to {
-				transform: rotate(360deg);
-			}
-		}
-	</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/css/swiper.min.css">
+    <link rel="stylesheet" href="./index.css">
+    <title>Document</title>
 </head>
 <body>
-	<h1>恭喜您摘到了一颗星星！</h1>
-	<img src="https://i.imgur.com/Ll3fY3F.png" alt="一颗星星">
-	<p>您已经摘到了这颗闪闪发光的星星，继续加油，摘更多的星星吧！</p>
+        <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="view special">
+                            <div></div>
+                            <!-- 特殊内容 -->
+                            <!-- <div class="paras">
+                           </div> -->
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="moon"></div>
+                        <div class="view favourite">
+                            <div class="juan"></div>
+                        </div>
+                        <div class="view"></div>
+                    </div>
+                    <!-- <div class="swiper-slide">
+                            <div class="view favourite-songs">
+                                <div class="mainwrap">
+                                    <div class="shoubi"></div>
+                                    <div class="man"></div>
+                                    <div class="tou"></div>
+                                </div>
+                            </div>
+                    </div> -->
+                    <div class="swiper-slide">
+                        <div class="moon"></div>
+                        <div class="star"></div>
+                        <div class="juan"></div>
+                    </div>
+                </div>
+        </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/js/swiper.min.js"></script>  
+    <script>    
+        var mySwiper = new Swiper ('.swiper-container', {
+        direction: 'vertical', // 垂直切换选项
+        })
+        
+        
+    </script>  
 </body>
 </html>
